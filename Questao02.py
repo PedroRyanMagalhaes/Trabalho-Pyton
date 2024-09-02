@@ -2,7 +2,7 @@
  
 print("Pedro Ryan Magalhaes`a Store")
 
-
+#input menu para facil entendimento do usuario
 def exibir_menu():
     print("\nMenu:")
     print("Tamanho P - Bife Acebolado (BA): R$ 16,00  Filé de Frango (FF): R$ 15,00")
@@ -10,7 +10,7 @@ def exibir_menu():
     print("Tamanho G - Bife Acebolado (BA): R$ 22,00  Filé de Frango (FF): R$ 21,00")
 
 valorTotal = 0
-
+#while usado conforme aprendido na aula
 while True:
     exibir_menu()
 
@@ -24,7 +24,7 @@ while True:
         print("Tamanho inválido. Tente novamente")
         continue  
 
-    
+    #variaçao da estrutura condiconal
     if sabor == "BA":
         if tamanho == "P":
             valorTotal += 16
@@ -45,5 +45,5 @@ while True:
     if algoMais == "n":
         break  
 
-
+#f-string
 print(f"\nObrigado por comprar. O valor total é R${valorTotal}")
